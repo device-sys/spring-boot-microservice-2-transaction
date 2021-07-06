@@ -24,7 +24,7 @@ public class TransactionService implements ITransactionService
     @Override
     public void deleteTransaction(Long transactionId)
     {
-        transactionRepository.deleteAllById(transactionId);
+        transactionRepository.deleteById(transactionId);
     }
 
     @Override

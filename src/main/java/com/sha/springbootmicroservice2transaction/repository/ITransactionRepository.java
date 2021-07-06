@@ -9,6 +9,4 @@ import java.util.List;
 public interface ITransactionRepository extends JpaRepository<Transaction , Long>
 {
     List<Transaction> findAllByUserId(Long userId);
-
-    void deleteAllById(Long transactionId);
 }

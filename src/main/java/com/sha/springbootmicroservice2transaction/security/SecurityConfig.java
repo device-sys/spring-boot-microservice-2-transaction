@@ -18,9 +18,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter
     @Value("${service.security.secure-key-password}")
     private String SECURE_KEY_PASSWORD;
 
-    public SecurityConfig() {
-    }
-
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception
     {
